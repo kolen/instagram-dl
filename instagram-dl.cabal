@@ -1,12 +1,12 @@
 name:                instagram-dl
 version:             0.1.0.0
-synopsis:            Initial project template from stack
+synopsis:            Downloads images from Instagram
 description:         Please see README.md
 homepage:            http://github.com/githubuser/instagram-dl#readme
 license:             BSD3
 license-file:        LICENSE
 author:              Author name here
-maintainer:          example@example.com
+maintainer:          incredible.angst@gmail.com
 copyright:           2010 Author Here
 category:            Web
 build-type:          Simple
@@ -28,10 +28,10 @@ library
                      , text
   default-language:    Haskell2010
 
-executable instagram-dl-exe
+executable instagram-dl
   hs-source-dirs:      app
   main-is:             Main.hs
-  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N -optc-Os -O2
   build-depends:       base
                      , instagram-dl
                      , cmdargs
